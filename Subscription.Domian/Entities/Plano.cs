@@ -1,8 +1,5 @@
 ﻿using Subscription.Domain.Enums;
 using Subscription.Domian.Commons;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Subscription.Domain.Entities
 {
@@ -17,7 +14,7 @@ namespace Subscription.Domain.Entities
 
         #region Relacionamentos
 
-        public ICollection <Assinatura>? Assinaturas { get; set; }
+        public ICollection<Assinatura>? Assinaturas { get; set; }
 
         #endregion
     }

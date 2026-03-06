@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Subscription.Domain.Enums
+﻿namespace Subscription.Domain.Enums
 {
     public enum StatusAssinatura
     {

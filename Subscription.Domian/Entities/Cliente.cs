@@ -1,9 +1,6 @@
 ﻿using Subscription.Domain.Enums;
 using Subscription.Domian.Commons;
 using Subscription.Domian.ValueObjects;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Subscription.Domain.Entities
 {

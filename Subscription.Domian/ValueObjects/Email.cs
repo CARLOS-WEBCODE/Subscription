@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace Subscription.Domian.ValueObjects
 {
@@ -15,10 +12,10 @@ namespace Subscription.Domian.ValueObjects
         //Construtor público para criar uma instância de Email
         public Email(string endereco)
         {
-            if(string.IsNullOrWhiteSpace(endereco))
+            if (string.IsNullOrWhiteSpace(endereco))
                 throw new ArgumentNullException("Email é obrigatório");
 
-            if(!IsValid(endereco))
+            if (!IsValid(endereco))
                 throw new ArgumentException("Email inválido");
 
             Endereco = endereco.ToLower();

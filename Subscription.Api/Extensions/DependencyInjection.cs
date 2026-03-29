@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Subscription.Domain.Interfaces.Repositories;
 using Subscription.Infra.Data.Contexts;
+using Subscription.Infra.Data.Repositories;
 
 namespace Subscription.Api.Extensions
 {
@@ -16,6 +18,8 @@ namespace Subscription.Api.Extensions
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
             // Obter a string de conexão do arquivo de configuração (appsettins.json)
 
+            //Configurar o UnitOfWork
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             return services;
         }
